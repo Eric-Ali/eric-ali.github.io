@@ -106,7 +106,7 @@
 
     header {
       text-align: center;
-      padding: 3rem 1rem 2rem;
+      padding: 3rem 1rem 1.5rem;
     }
 
     header h1 {
@@ -120,6 +120,23 @@
       font-size: 1.2rem;
       font-style: italic;
       color: #666;
+    }
+
+    /* Couple Photo Container */
+    .photo-container {
+      width: 100%;
+      max-height: 450px;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    .photo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .card {
@@ -139,16 +156,35 @@
       text-align: center;
     }
 
+    .event-block {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px dashed #ddd;
+    }
+
+    .event-block:last-of-type {
+      border-bottom: none;
+      margin-bottom: 1rem;
+      padding-bottom: 0;
+    }
+
+    .event-block h3.event-title {
+      font-size: 1.25rem;
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
     .details-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 1.5rem;
       text-align: center;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
 
-    .detail-item h3 {
-      font-size: 0.9rem;
+    .detail-item h4 {
+      font-size: 0.85rem;
       text-transform: uppercase;
       letter-spacing: 1px;
       color: var(--accent);
@@ -156,7 +192,7 @@
     }
 
     .detail-item p {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
 
     .responsive-iframe-container {
@@ -218,34 +254,83 @@
       <p class="subtitle">Come Celebrate With Us!</p>
     </header>
 
-    <!-- Event Details Section -->
+    <!-- Couple Photograph Placeholder -->
+    <div class="photo-container">
+      <!-- REPLACE 'path/to/your-photo.jpg' WITH YOUR ACTUAL IMAGE URL OR LOCAL FILE PATH -->
+      <img src="img/papusas.jpg" alt="Eric & Ali Photograph" />
+    </div>
+
+    <!-- Weekend Schedule Section -->
     <div class="card">
-      <h2>When & Where</h2>
-      <div class="details-grid">
-        <div class="detail-item">
-          <h3>Date</h3>
-          <p>Saturday, October 15, 2027</p>
-        </div>
-        <div class="detail-item">
-          <h3>Time</h3>
-          <p>4:30 PM EDT</p>
-        </div>
-        <div class="detail-item">
-          <h3>Venue</h3>
-          <p>Sonny's Pizza<br />3120 Georgia Ave NW, Washington, DC</p>
+      <h2>Weekend Events</h2>
+
+      <!-- Friday Welcome Dinner -->
+      <div class="event-block">
+        <h3 class="event-title">Friday Welcome Dinner</h3>
+        <div class="details-grid">
+          <div class="detail-item">
+            <h4>Date</h4>
+            <p>Friday, October 14, 2027</p>
+          </div>
+          <div class="detail-item">
+            <h4>Time</h4>
+            <p>6:00 PM EDT</p>
+          </div>
+          <div class="detail-item">
+            <h4>Venue</h4>
+            <p>[ Friday Dinner Venue Name ]<br />[ Address / Location Details ]</p>
+          </div>
         </div>
       </div>
 
-      <!-- Google Maps Embed -->
-      <div class="responsive-iframe-container">
-        <!-- REPLACE THE SRC BELOW WITH YOUR GOOGLE MAPS EMBED URL -->
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3063.338250038497!2d-77.0235161!3d38.9296528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c977b57482a7%3A0x52cdadedd5eada02!2zU29ubnnigJlzIFBpenph!5e1!3m2!1sen!2sus!4v1789691669086!5m2!1sen!2sus" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+      <!-- Saturday Wedding Celebration -->
+      <div class="event-block">
+        <h3 class="event-title">Saturday Wedding Celebration</h3>
+        <div class="details-grid">
+          <div class="detail-item">
+            <h4>Date</h4>
+            <p>Saturday, October 15, 2027</p>
+          </div>
+          <div class="detail-item">
+            <h4>Time</h4>
+            <p>4:30 PM EDT</p>
+          </div>
+          <div class="detail-item">
+            <h4>Venue</h4>
+            <p>Sonny's Pizza<br />3120 Georgia Ave NW, Washington, DC</p>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed for Main Venue -->
+        <div class="responsive-iframe-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3063.338250038497!2d-77.0235161!3d38.9296528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c977b57482a7%3A0x52cdadedd5eada02!2zU29ubnnigJlzIFBpenph!5e1!3m2!1sen!2sus!4v1789691669086!5m2!1sen!2sus" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
       </div>
+
+      <!-- Sunday Farewell Brunch -->
+      <div class="event-block">
+        <h3 class="event-title">Sunday Farewell Brunch</h3>
+        <div class="details-grid">
+          <div class="detail-item">
+            <h4>Date</h4>
+            <p>Sunday, October 16, 2027</p>
+          </div>
+          <div class="detail-item">
+            <h4>Time</h4>
+            <p>10:30 AM EDT</p>
+          </div>
+          <div class="detail-item">
+            <h4>Venue</h4>
+            <p>[ Sunday Brunch Venue Name ]<br />[ Address / Location Details ]</p>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <!-- RSVP Section -->
