@@ -125,7 +125,7 @@
     /* Couple Photo Container */
     .photo-container {
       width: 100%;
-      max-height: 450px;
+      max-height: 1000px;
       margin-bottom: 2rem;
       border-radius: 12px;
       overflow: hidden;
@@ -134,7 +134,7 @@
 
     .photo-container img {
       width: 100%;
-      height: 100%;
+      height: 75%;
       object-fit: cover;
       display: block;
     }
@@ -239,7 +239,7 @@
   <!-- Password Entry Gate -->
   <div id="password-gate">
     <h2>Welcome</h2>
-    <p>Please enter the passphrase provided in your invitation to view our wedding details.</p>
+    <p>Please enter the password to view our wedding details.</p>
     <div class="input-group">
       <input type="password" id="password-input" placeholder="Enter Password" />
       <button onclick="checkPassword()">Enter</button>
@@ -254,10 +254,16 @@
       <p class="subtitle">Come Celebrate With Us!</p>
     </header>
 
-    <!-- Couple Photograph Placeholder -->
+    <!-- Couple Photograph -->
     <div class="photo-container">
-      <!-- REPLACE 'path/to/your-photo.jpg' WITH YOUR ACTUAL IMAGE URL OR LOCAL FILE PATH -->
-      <img src="img/papusas.jpg" alt="Eric & Ali Photograph" />
+      <img src="img/driveway.jpg" alt="Eric & Ali Photograph" />
+    </div>
+
+    <!-- Background -->
+    <div class="card">
+      <h2>We're Married!</h2>
+      <p>We married at a small ceremony in Harpers Ferry surrounded by our parents and siblings in October 2026. 
+        We would love to celebrate our milestone with all our closest friends and family!</p>
     </div>
 
     <!-- Weekend Schedule Section -->
@@ -270,7 +276,7 @@
         <div class="details-grid">
           <div class="detail-item">
             <h4>Date</h4>
-            <p>Friday, October 14, 2027</p>
+            <p>Friday, October 29, 2027</p>
           </div>
           <div class="detail-item">
             <h4>Time</h4>
@@ -278,22 +284,22 @@
           </div>
           <div class="detail-item">
             <h4>Venue</h4>
-            <p>[ Friday Dinner Venue Name ]<br />[ Address / Location Details ]</p>
+            <p>Rock Creek Park Pavillion X<br />[ Address / Location Details ]</p>
           </div>
         </div>
       </div>
 
-      <!-- Saturday Wedding Celebration -->
+      <!-- Saturday Night Celebration -->
       <div class="event-block">
-        <h3 class="event-title">Saturday Wedding Celebration</h3>
+        <h3 class="event-title">Saturday Night Celebration</h3>
         <div class="details-grid">
           <div class="detail-item">
             <h4>Date</h4>
-            <p>Saturday, October 15, 2027</p>
+            <p>Saturday, October 30, 2027</p>
           </div>
           <div class="detail-item">
             <h4>Time</h4>
-            <p>4:30 PM EDT</p>
+            <p>6:00-10:00 PM EDT</p>
           </div>
           <div class="detail-item">
             <h4>Venue</h4>
@@ -318,15 +324,15 @@
         <div class="details-grid">
           <div class="detail-item">
             <h4>Date</h4>
-            <p>Sunday, October 16, 2027</p>
+            <p>Sunday, October 31, 2027</p>
           </div>
           <div class="detail-item">
             <h4>Time</h4>
-            <p>10:30 AM EDT</p>
+            <p>9:30 AM EDT</p>
           </div>
           <div class="detail-item">
             <h4>Venue</h4>
-            <p>[ Sunday Brunch Venue Name ]<br />[ Address / Location Details ]</p>
+            <p>Our Home<br />1421 Monroe St NW</p>
           </div>
         </div>
       </div>
@@ -336,13 +342,83 @@
     <!-- RSVP Section -->
     <div class="card">
       <h2>RSVP</h2>
+      <p>RSVP form coming soon</p>
+      <!--
       <div class="form-container">
-        <!-- REPLACE THE SRC BELOW WITH YOUR GOOGLE FORM EMBED URL -->
         <iframe 
           src="https://docs.google.com/forms/d/e/1FAIpQLSdrBlckNFKnQolVYWY2ifLgNBKz3DgBjS8BjSYF92k7kkgJ2g/viewform?embedded=true">
           Loading…
         </iframe>
       </div>
+      -->
+    </div>
+
+    <!-- Celebration FAQ -->
+    <div class="card">
+      <h2>Celebration FAQ</h2>
+      <p><strong>What should I wear?</strong><br>
+        Dressy casual encouraged, and something comfortable for lots of eating and dancing! If it helps, Ali will
+        be wearing a white dress and Eric will be in a suit.<br>
+        <br>
+        <strong>Can I bring my kids?</strong><br>
+        We’d love to have your little ones join! We’ll have a coloring and game corner, land some kid friendly
+        pizza options.<br>
+        <br>
+        <strong>What’s for dinner?</strong><br>
+        Sonny’s is our favorite neighborhood place for delicious pizza, which will be served buffet style alongside
+        salads and other snacky appetizers and an open bar, come hungry! If you have any dietary restrictions,
+        please note that in your RSVP!<br>
+        <br>
+        <strong>How should I get to Sonny’s?</strong><br>
+        There is extremely limited street parking nearby, we recommend walking from the Columbia Heights
+        Metro (~10 min).<br>
+        <br>
+        <strong>Do you have a wedding registry?</strong><br>
+        We kindly request NO gifts. If you must, we invite you to donate to some of our favorite organizations
+        doing good work – <a href="https://wck.org/donate/">World Central Kitchen</a>, <a href="https://www.npr.org/donations/support">NPR</a>, and <a href="https://waba.org/donate">the Washington Area Bicyclist Association</a>.<br>
+        <br>
+       <strong>When should I RSVP by?</strong><br>
+        Please RSVP by <strong>September 15</strong> using the form above on this page.</p>
+    </div>
+
+    <!-- Travel Details -->
+    <div class="card">
+      <h2>Travel Details</h2>
+      <p><strong>Airports</strong><br>
+      The D.C. area has 3 airports – National Airport (DCA), Dulles International (IAD) and Baltimore
+      Washington International (BWI). All are public transit accessible, however DCA will get you closest to
+      the city.<br>
+      
+      <strong>Where to Stay</strong><br>
+      <li><a href="https://www.thelinehotel.com/dc/">The Line</a></li>
+
+      <li><a href="https://www.airbnb.com/">AirBnB</a>: Book early, but lots of options in the Mt. Pleasant, Columbia Heights, and Adams Morgan area. If
+      you’re unsure about a location, send Eric or Ali a text and we can help!</li>
+
+      <li><a href="https://www.ihg.com/holidayinn/hotels/us/en/washington/wasct/hoteldetail"> Holiday Inn Washington-Central</a></li>
+
+      <li><a href="https://www.hilton.com/en/hotels/dcagsdt-doubletree-washington-dc-silver-spring/">Double Tree Silver Spring</a>: right over the border in Maryland, but an easy bus takes you to the venue.</li>
+      <br>
+      <strong>Getting Around</strong><br>
+      We recommend utilizing the transit system to get around, the metro is easy to use and can take you most
+      places – more info on the <a href="https://www.wmata.com/ride/guides.html">WMATA website</a>. (Metro cards are no longer needed, just tap a credit card or
+      your phone with a virtual card to ride the bus or train!)<br>
+
+      Depending on where you are staying, finding parking can be difficult. We recommend skipping the rental
+      car and utilizing lyft, uber, or taxis (through the curb app) when needed. However transit, or biking (rental
+      bikes through <a href="https://capitalbikeshare.com/">Capital Bikeshare</a>) or walking are often the fastest way to get places.</p>
+    </div>
+
+    <!-- Local Information-->
+    <div class="card">
+      <h2>Local Information</h2>
+      <p>We've marked some of our favorite places to eat and hang out in the following map:</p>
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=12iasb-FnaEACnHHnP71LTEQfEtorC2s&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+    </div>
+
+    <!-- Couple Photograph -->
+    <div class="photo-container">
+      <img src="img/stairs2.jpg" alt="Eric & Ali Photograph" />
     </div>
 
     <footer>
@@ -351,8 +427,7 @@
   </div>
 
   <script>
-    // SET YOUR DESIRED PASSWORD HERE
-    const SITE_PASSWORD = "Papusa2027";
+    const SITE_PASSWORD = "papusa2027";
 
     function checkPassword() {
       const input = document.getElementById("password-input").value;
